@@ -1,0 +1,213 @@
+/* Global styles */
+
+* {
+  font-family: satoshi, helvetica, arial;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0;
+  text-decoration: none;
+  background-color: var(--tw-bg-white);
+  box-sizing: border-box;
+}
+
+.card {
+  height: 280px;
+  /* Full width on mobile */
+
+  box-shadow: var(--tw-shadow-sm);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: var(--tw-shadow-lg);
+}
+
+.card:active {
+  transform: scale(0.95);
+  box-shadow: var(--tw-shadow-sm);
+}
+
+/* Banner offer sales */
+.offer-sales-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sales-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  animation: fadeIn 2s ease-in-out infinite alternate;
+}
+
+.sales-text {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* .................................. */
+
+.card1:hover {
+  transform: scale(0.8);
+  box-shadow: var(--tw-shadow-lg);
+}
+
+.card1:active {
+  transform: scale(0.5);
+  box-shadow: var(--tw-shadow-sm);
+}
+
+.card1-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card1-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.card1-info h2 {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+.card1-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .card1 {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .card1-info h2 {
+    font-size: 14px;
+  }
+
+  .card1-info p {
+    font-size: 12px;
+  }
+}
+
+/* .................. */
+
+/* Overlay to cover the whole screen */
+/* Overlay to cover the whole screen */
+/* modal.css */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add these styles to your CSS file */
+.zoom-container {
+  position: relative;
+  display: inline-block;
+}
+
+.zoom-image {
+  transition: transform 0.5s ease;
+}
+
+.zoom-container:hover .zoom-image {
+  transform: scale(1.5); /* Adjust the scale as needed */
+  cursor: zoom-in;
+}
+
+.zoom-image-container {
+  overflow: hidden;
+}
+
+/* Add margin to TestimonialCard for spacing */
+.mx-4 {
+  margin-left: 1rem; /* Adjust as needed */
+  margin-right: 1rem; /* Adjust as needed */
+}
+
+/* Ensure the slider container is responsive */
+.slick-slider {
+  width: 100%;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+}
+
+* {
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Wix Madefor Text", sans-serif;
+  font-weight: 500;
+  font-size: 16px; /* Default font size for large screens */
+}
+
+@media (max-width: 1024px) {
+  /* Medium screens (e.g., tablets) */
+  * {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Small screens (e.g., smartphones) */
+  * {
+    font-size: 15px;
+  }
+}
+
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

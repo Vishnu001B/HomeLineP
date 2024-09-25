@@ -1,0 +1,22 @@
+.video-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures the video is visible */
+  }
+  
+  .play-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
